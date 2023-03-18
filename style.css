@@ -1,81 +1,81 @@
 body {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .grid-container {
- height: 400px;
- width: 400px;
- border: 3px solid red;
- margin-bottom: 8px;
- 
+  height: 400px;
+  width: 400px;
+  border: 3px solid red;
+  margin-bottom: 8px;
+
 }
 
 h1 {
- color: #4d0303;
+  color: #4d0303;
 }
 
 button {
- border-radius: 5px;
- margin-left: 8px;
+  border-radius: 5px;
+  margin-left: 8px;
 }
 
 .form {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- width: 300px;
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
 }
 
 .user-number {
- width: 30px;
- height: 20px;
+  width: 30px;
+  height: 20px;
   border-radius: 8px;
 }
 
 .user-submit {
- width: 60px;
- height: 30px;
- align-self: auto;
- background-color: aquamarine;
- border-radius: 8px;
+  width: 60px;
+  height: 30px;
+  align-self: auto;
+  background-color: aquamarine;
+  border-radius: 8px;
 }
 
 #copy-input {
- width: 30px;
- height: 20px;
+  width: 30px;
+  height: 20px;
 }
 
 .btn-container {
- display: flex;
- flex-direction: row;
- justify-content: center;
- justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
 
 }
 
 .black {
- color:white;
- background-color: black;
+  color:white;
+  background-color: black;
 }
 
 .green{
- background-color: green;
+  background-color: green;
 }
 
 .gray {
- background-color: gray;
+  background-color: gray;
 }
 
 .random {
- background-color: rgb(225, 86, 47);
+  background-color: rgb(225, 86, 47);
 }
 
 .reset {
- background-color: rgb(147, 237, 147);
+  background-color: rgb(147, 237, 147);
 }
