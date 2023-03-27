@@ -10,16 +10,16 @@
 <body>
  <h1>COLOR GAME</h1>
   <div id="form" class="form">
-   <p>New grid size:</p><input type="text" id="user-number" class="user-number">
+   <p class="new-grid-size">New grid size:</p><input type="text" class="grid-size">
    <p id="copy-input"></p>
-   <button id='user-submit' class="user-submit">Submit</button>
+   <button class="submit">Apply</button>
   </div>
   <p id="prompt"></p>
 
   <div class="grid-container"></div>
   <div class="btn-container">
    <button class="black">Black</button>
-   <button class="green">Green</button>
+   <button class="green" onclick="changeColor('green')">Green</button>
    <button class="random">Random</button>
    <button class="gray">Gray</button>
    <button class="erase">Erase</button>

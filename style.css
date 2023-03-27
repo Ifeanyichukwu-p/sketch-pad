@@ -7,9 +7,10 @@ body {
 }
 
 .grid-container {
+  display: grid;
   height: 400px;
   width: 400px;
-  border: 3px solid red;
+  border: 3px solid rgb(14, 61, 192);
   margin-bottom: 8px;
 
 }
@@ -32,18 +33,31 @@ button {
 
 }
 
-.user-number {
+.grid-size {
   width: 30px;
   height: 20px;
   border-radius: 8px;
 }
 
-.user-submit {
+#prompt {
+  color: red;
+}
+
+.submit {
   width: 60px;
   height: 30px;
   align-self: auto;
   background-color: aquamarine;
   border-radius: 8px;
+  font-weight: bold;
+}
+
+.new-grid-size {
+  font-weight: bold;
+}
+
+#copy-input {
+  
 }
 
 #copy-input {
