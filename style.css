@@ -93,3 +93,7 @@ button {
 .reset {
   background-color: rgb(147, 237, 147);
 }
+
+.red {
+  background-color: red;
+}

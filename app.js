@@ -5,8 +5,12 @@ const apply = document.querySelector('.submit');
 const btnBlack = document.querySelector('.black');
 const btnGreen = document.querySelector('.green');
 const gridContainer = document.querySelector('.grid-container');
+const resetGrid = document.querySelector('.reset');
+const randomColor = document.querySelector('.random');
+
 let numberEntered;
-let boxes;
+let color ;
+let click = true;
 
 
 gridSize.addEventListener('keyup',function(){
@@ -37,11 +41,8 @@ const drawGrid = (numberEntered) => {
 
     for(i = 0; i < numberEntered**2 ; i++){
         pixel = document.createElement('div');
-        pixel.addEventListener('mouseover', function(){
-            this.style.backgroundColor = 'black';
-        });
+        pixel.addEventListener('mouseover', colorDiv);
         pixel.style.backgroundColor = 'white';
-        pixel.style.border = '1px solid yellow';
         gridContainer.insertAdjacentElement('beforeend',pixel);
     }
 
@@ -51,8 +52,46 @@ const drawGrid = (numberEntered) => {
 }
 
 function colorDiv(){
+    if(color == 'random'){
+        this.style.backgroundColor = randColor();
+    }else if (color == 'black'){
+        this.style.backgroundColor = 'black';
+    }else if (color == 'red'){
+        this.style.backgroundColor = 'red';
+    }else if (color == 'green'){
+        this.style.backgroundColor = 'green';
+    }else if (color == 'gray'){
+        this.style.backgroundColor = 'gray';
+    }else{
+        this.style.backgroundColor = 'white';
+    }
+
     
 }
 
+function changeColor (choice){
+    color = choice
+}
+    
 
 
+resetGrid.addEventListener('click', () => {
+    let squares = gridContainer.querySelectorAll('div');
+    squares.forEach((div) => div.remove());
+    gridSize.value = '';
+    promptMsg.textContent = '';
+    copyInput.textContent = '';
+})
+
+
+
+
+
+
+
+function  randColor() {
+    const R = Math.floor((Math.random() * 255) + 1);
+    const G = Math.floor((Math.random() * 255) + 1);
+    const B = Math.floor((Math.random() * 255) + 1);
+    return `rgb(${R}, ${G}, ${B})`
+}
