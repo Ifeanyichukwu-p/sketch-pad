@@ -2,11 +2,9 @@ const gridSize = document.querySelector('.grid-size');
 const copyInput = document.querySelector('#copy-input');
 const promptMsg = document.querySelector('#prompt')
 const apply = document.querySelector('.submit');
-const btnBlack = document.querySelector('.black');
-const btnGreen = document.querySelector('.green');
 const gridContainer = document.querySelector('.grid-container');
 const resetGrid = document.querySelector('.reset');
-const randomColor = document.querySelector('.random');
+
 
 let numberEntered;
 let color ;
@@ -79,7 +77,7 @@ resetGrid.addEventListener('click', () => {
     let squares = gridContainer.querySelectorAll('div');
     squares.forEach((div) => div.remove());
     gridSize.value = '';
-    promptMsg.textContent = '';
+    promptMsg.textContent = 'Play by selecting gridsize of numbers between 2 and 99';
     copyInput.textContent = '';
 })
 
